@@ -3,8 +3,13 @@
 <head>
 <title>ABHIVYAKTI 2018</title>
 <meta charset="UTF-8">
+<meta name="description" content="ABHIVYAKTI 2018">
+  <meta name="keywords" content="IIITN,ABHIVYAKTI,Abhivyakti,iiitn">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -47,6 +52,94 @@
 }
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 46.25%;
+	padding-top: 25px;
+	height: 0;
+  text-align: center;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#days {
+  font-size: 200px;
+  color: #db4844;
+}
+#hours {
+  font-size: 150px;
+  color: #f07c22;
+}
+#minutes {
+  font-size: 100px;
+  color: #f6da74;
+}
+#seconds {
+  font-size: 50px;
+  color: #abcd58;
+}
+
+#days, #hours, #minutes, #seconds {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+span1, span2, span3, span4 {
+  display: block;
+  font-size: 20px;
+  color: white;
+}
+
+#timer {
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
+  color: white;
+  background: #222;
+}
+
+
+
+.timer{
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
+  color: white;
+  background: #222;
+}
+#mdays, #mhours, #mminutes, #mseconds {
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+
+#mdays {
+  font-size: 60px;
+  color: #db4844;
+}
+#mhours {
+  font-size: 50px;
+  color: #f07c22;
+}
+#mminutes {
+  font-size: 30px;
+  color: #f6da74;
+}
+#mseconds {
+  font-size: 20px;
+  color: #abcd58;
+}
+
+
+
+
 </style>
 </head>
 <body>
@@ -57,26 +150,26 @@ body {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
     <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT US</a>
-    <a href="/Users/sauravgajbhiye/Desktop/ABHIVYAKTI WEBSITE IIITN/T-shirts.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">T-SHIRTS</a>
+    <a href="T-shirts.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">T-SHIRTS</a>
     <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT US</a>
-      <a href="/Users/sauravgajbhiye/Desktop/ABHIVYAKTI WEBSITE IIITN/photogallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO GALLERY</a>
-        <a href="/Users/sauravgajbhiye/Desktop/ABHIVYAKTI WEBSITE IIITN/TEAM/Abhivyakti In charges .docx" download class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+      <a href="photogallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PHOTO GALLERY</a>
+        <a href="TEAM/Abhivyakti In charges.docx" download class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
     <div class="w3-dropdown-hover">
       <button class="w3-padding-large w3-button" title="More">RULEBOOK <i class="fa fa-caret-down"></i></button>
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="rulebook/Antara rules.docx" download class="w3-bar-item w3-button">ANTARA</a>
-        <a href="rulebook/Pathanatya Rulebook.docx" download class="w3-bar-item w3-button">PATHANATYA</a>
-        <a href="rulebook/ToTheBeat Rules2018.docx" download  class="w3-bar-item w3-button">TO THE BEAT</a>
-          <a href="rulebook/kavyanjali_rules.docx" download class="w3-bar-item w3-button">KAVYANJALI</a>
-            <a href="rulebook/Acting Smart rulebook.pdf" download class="w3-bar-item w3-button">ACTING SMART</a>
-              <a href="rulebook/Prashna Baan Rulebook.docx" download class="w3-bar-item w3-button">PRASHNA BAAN</a>
-              <a href="rulebook/Big Roar rules.docx" download class="w3-bar-item w3-button">THE BIG ROAR</a>
-                <a href="rulebook/Rules for Craftix.docx" download class="w3-bar-item w3-button">CRAFTIX</a>
-                  <a href="rulebook/Fusion Rulebook.docx" download class="w3-bar-item w3-button">FUSION</a>
+        <a href="Rulebooks/Antara.pdf" download class="w3-bar-item w3-button">ANTARA</a>
+        <a href="Rulebooks/Pathanatya.pdf" download class="w3-bar-item w3-button">PATHANATYA</a>
+        <a href="Rulebooks/To_the_Beat.pdf" download  class="w3-bar-item w3-button">TO THE BEAT</a>
+          <a href="Rulebooks/Kavyanjali.pdf" download class="w3-bar-item w3-button">KAVYANJALI</a>
+            <a href="Rulebooks/Acting_Smart.pdf" download class="w3-bar-item w3-button">ACTING SMART</a>
+              <a href="Rulebooks/Prashna_Baan.pdf" download class="w3-bar-item w3-button">PRASHNA BAAN</a>
+              <a href="Rulebooks/Big_Roar.pdf" download class="w3-bar-item w3-button">THE BIG ROAR</a>
+                <a href="Rulebooks/Craftix.pdf" download class="w3-bar-item w3-button">CRAFTIX</a>
+                  <a href="Rulebooks/Fusion.pdf" download class="w3-bar-item w3-button">FUSION</a>
       </div>
     </div>
 
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src= "/Users/sauravgajbhiye/Desktop/ABHIVYAKTI WEBSITE IIITN/LOGO/ABHIVYAKTI LOGO.png"style="width:50px"style="height:50px"></a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><img src= "LOGO/ABHIVYAKTI LOGO.png"style="width:50px"style="height:50px"></a>
   </div>
 </div>
 
@@ -86,7 +179,7 @@ body {font-family: "Lato", sans-serif}
   <a href="T-SHIRTS.html" class="w3-bar-item w3-button w3-padding-large">T-SHIRTS</a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT US</a>
     <a href="photogallery.html" class="w3-bar-item w3-button w3-padding-large">PHOTO GALLERY</a>
-      <a href="TEAM/Abhivyakti In charges .docx" class="w3-bar-item w3-button w3-padding-large">TEAM</a>
+      <a href="TEAM/Abhivyakti In charges.docx" class="w3-bar-item w3-button w3-padding-large">TEAM</a>
 </div>
 
 <!-- Page content -->
@@ -172,12 +265,39 @@ body {font-family: "Lato", sans-serif}
       <p><b>A Photography and Painting Competition.</b></p>
     </div>
   </div>
+
+  <br />
+  <br />
+      <div id="timer">
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
+        <div id="seconds"></div>
+      </div>
+
+      <div class="timer w3-hide-large w3-hide-medium">
+        <div id="mdays"></div>
+        <div id="mhours"></div>
+        <div id="mminutes"></div>
+        <div id="mseconds"></div>
+      </div>
+
   <!-- The About Us Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1000px" id="band">
     <h2 class="w3-wide">ABOUT US</h2>
     <p class="w3-opacity"><i>Come join us!!!</i></p>
     <p class="w3-justify">Come this Winter the gates of Central India's Largest Cultural Festival are opened. The Cultural Extravaganza, studded with electrifying and exhaling events and competitions. Conceptualized back in 2016, ABHIVYAKTI has come in all realms both qualitatively and quantititavely and has firmly ensourced itself as the centerpiece and the cultural spectrum of the region. Abhivyakti is a Cultural event completely organized and co-ordinated by willingness and true spirits of IIITians and their individual skill and strength are combined with teamwork, in order to produce meaningfull results for the Institute. So come join us all in the event which will held on 10th-11th March 2018.</p>
   </div>
+
+  <!-- Youtube Video-->
+  <div class=" videoWrapper w3-container w3-content w3-center" style="max-width:1200px"  >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mJLSTL_9nTY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<br>
+<br>
+<br>
+<br>
 
   <!-- The EVENTS Section -->
   <div class="w3-black" id="tour">
@@ -565,6 +685,35 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+function makeTimer() {
+
+			var endTime = new Date("March 10, 2018 8:00:00");
+			var endTime = (Date.parse(endTime)) / 1000;
+
+			var now = new Date();
+			var now = (Date.parse(now) / 1000);
+
+			var timeLeft = endTime - now;
+
+			var days = Math.floor(timeLeft / 86400);
+			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+			var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+			if (hours < "10") { hours = "0" + hours; }
+			if (minutes < "10") { minutes = "0" + minutes; }
+			if (seconds < "10") { seconds = "0" + seconds; }
+
+			$("#days").html(days + "<span1>Days</span1>");
+			$("#hours").html(hours + "<span2>Hours</span2>");
+			$("#minutes").html(minutes + "<span3>Minutes</span3>");
+			$("#seconds").html(seconds + "<span4>Seconds</span4>");
+
+	}
+
+	setInterval(function() { makeTimer(); }, 1000);
 
 
 
